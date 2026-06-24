@@ -1,4 +1,4 @@
-name = "warpproxy"
+name = 'old-limit-59a0'
 main = "src/index.ts"
 compatibility_date = "2024-06-01"
 
