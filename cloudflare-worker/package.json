@@ -2,6 +2,8 @@
   "name": "warpproxy-worker",
   "private": true,
   "scripts": {
+    "preinstall": "echo \"[warpproxy] installing worker dependencies...\"",
+    "postinstall": "echo \"[warpproxy] dependencies installed\"",
     "dev": "wrangler dev",
     "deploy": "wrangler deploy",
     "tail": "wrangler tail"
