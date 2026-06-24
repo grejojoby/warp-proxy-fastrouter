@@ -1,13 +1,10 @@
-name: warpproxy
+name: Build and push
 
 on:
   push:
     branches:
-      - master
       - main
-    paths:
-      - "warpproxy/**"
-      - ".github/workflows/warpproxy.yml"
+      - master
   workflow_dispatch:
 
 permissions:
@@ -35,7 +32,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: ghcr.io/${{ github.repository_owner }}/warpproxy
+          images: ghcr.io/${{ github.repository }}
           tags: |
             type=ref,event=branch
             type=sha,prefix=
@@ -44,7 +41,7 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v6
         with:
-          context: ./warpproxy
+          context: .
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
