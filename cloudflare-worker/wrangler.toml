@@ -1,0 +1,11 @@
+name = "warpproxy"
+main = "src/index.ts"
+compatibility_date = "2024-06-01"
+
+# Route example for warpproxy.grejo.in:
+# [[routes]]
+# pattern = "warpproxy.grejo.in/*"
+# zone_name = "grejo.in"
+
+[observability]
+enabled = true

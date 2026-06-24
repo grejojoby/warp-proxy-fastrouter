@@ -1,0 +1,14 @@
+{
+  "name": "warpproxy-worker",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "tail": "wrangler tail"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250624.0",
+    "typescript": "^5.8.3",
+    "wrangler": "^4.22.0"
+  }
+}

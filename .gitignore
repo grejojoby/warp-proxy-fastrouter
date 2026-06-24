@@ -1,0 +1,28 @@
+# Go build output
+/warpproxy
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Env / secrets
+.env
+.env.*
+.dev.vars
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+
+# Cloudflare Worker
+cloudflare-worker/node_modules/
+cloudflare-worker/.wrangler/
+cloudflare-worker/dist/
+cloudflare-worker/*.tsbuildinfo
